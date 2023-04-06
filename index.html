@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bye bye world</title>
+    <style>
+@font-face {
+    font-family: 'Bazzi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+      body {
+	font-family: "Bazzi";
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	background-image: url("./background.png");
+}  
+    .container  {
+        width: 450px;
+        background-color: darkmagenta;
+        height: 100%;
+        color: rgb(0, 0, 0);
+        border-radius: 10px;
+        font-size: xx-large
+    }
+    .photos{
+        margin-top: 30px;
+    }
+
+    .photo-frame{
+        background-color: black;
+        margin: 30px 15px;
+        height: 260px;
+        position: relative;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .f-title{color: black;
+        font-weight: 900;
+        font-size: larger;
+
+    }
+    .f-date{color: black;
+        font-weight: 800;
+        font-size: 30px;
+    }
+    #image1{
+        background-image: url('./img1.png');
+        background-size: cover;
+    }
+    #image2{
+        background-image: url('./img2.png');
+        background-size: cover;
+    }
+    #image3{
+        background-image: url('./img3.png');
+        background-size: cover;
+    }
+    #image4{
+    background-image: url('./img4.png');
+    background-size: cover;
+    }
+    .photo_descripstion{
+        background-color: rgb(49, 126, 235);
+        border-radius: 20px;
+        width: fit-content;
+        padding: 0 0px;
+        position: absolute;
+        bottom: 0;
+        transform: translate(-50%);
+        left: 50%;
+    }
+    .video{
+        width: 100%;
+        height: 100%;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="photos">
+            <div id="image1" class="photo-frame">
+                <span id="desc1" class="photo_descripstion">
+                    첫번째 이미지 설명
+                </span>
+            </div>
+            <div id="image2" class="photo-frame">
+                <span id="desc2" class="photo_descripstion">
+                    두번째 이미지 설명
+                </span>
+            </div>
+            <div id="image3" class="photo-frame">
+                <span id="desc3" class="photo_descripstion">
+                    세번째 이미지 설명
+                </span>
+            </div>
+            <div class="photo-frame">
+                <div class="photo-frame">
+                    <iframe
+                        src="https://www.youtube.com/embed/0BMRnPavn-o"
+                        class="video"
+                    frameborder="0"
+                    ></iframe>
+                </div>
+        </div>
+        <div class="footer">
+            <p class="f-title">happy lunch time</p>
+            <p class="f-date">2023.04.05</p>
+        </div>
+    </div>
+</body>
+</html>
